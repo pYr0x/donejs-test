@@ -30,5 +30,4 @@ node_modules
 # DoneJS
 docs/
 build/
-dist/
 cache/
