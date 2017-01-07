@@ -1,22 +1,22 @@
 {
-  "name": "donejs-test",
+  "name": "cms",
   "version": "1.0.0",
   "description": "",
   "homepage": "",
   "author": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "donejs": "node_modules/bin/donejs"
+    "build": "node build.js",
+    "start": "http-server"
   },
-  "main": "index.js",
+  "main": "cms/index.stache!done-autorender",
   "files": [
     "src"
   ],
   "keywords": [],
   "steal": {
-    "main": "donejs-test/index.stache!done-autorender",
+    "main": "cms/index.stache!done-autorender",
     "directories": {
-      "lib": "src"
+      "lib": "assets"
     },
     "configDependencies": [
       "node_modules/can-zone/register"

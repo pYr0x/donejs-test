@@ -3,10 +3,10 @@
     <title>{{title}}</title>
   </head>
   <body>
-    <can-import from="donejs-test/styles.less" />
-    <can-import from="donejs-test/app" export-as="viewModel" />
+    <can-import from="cms/styles.less" />
+    <can-import from="cms/app" export-as="viewModel" />
 
-    <can-import from="donejs-test/comp-header/">
+    <can-import from="cms/comp-header/">
         {{#isResolved}}
         <comp-header></comp-header>
         {{/isResolved}}
@@ -16,7 +16,7 @@
 
     {{#switch env.NODE_ENV}}
       {{#case "production"}}
-        <script src="{{joinBase 'node_modules/steal/steal.production.js'}}"  main="donejs-test/index.stache!done-autorender"></script>
+        <script src="{{joinBase 'node_modules/steal/steal.production.js'}}"  main="cms/index.stache!done-autorender"></script>
       {{/case}}
       {{#default}}
         <script src="/node_modules/steal/steal.js"></script>

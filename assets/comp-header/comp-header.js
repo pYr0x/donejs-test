@@ -16,7 +16,6 @@ export default Component.extend({
 	events: {
     init: function () {
         console.log("test");
-        console.log(this.viewModel.foo.bar);
 		}
 	}
 });
